@@ -4,196 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Akash's Portfolio</title>
-  <style>
-    /* Header */
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #333;
-      padding: 20px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    }
-
-    header .logo {
-      display: flex;
-      align-items: center;
-    }
-
-    nav {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-    }
-
-    nav ul {
-      display: flex;
-      gap: 20px;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav ul li a {
-      color: #ecf0f1;
-      text-decoration: none;
-      padding: 8px 12px;
-      transition: color 0.3s ease, background-color 0.3s ease;
-    }
-
-    nav ul li a:hover {
-      color: #333;
-      background-color: #f39c12;
-      border-radius: 5px;
-    }
-
-    /* Responsive Header */
-    @media screen and (max-width: 768px) {
-      header {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      nav ul {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-      }
-    }
-
-    /* General Styles */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      background-color: #4b4b4b;
-      color: #ecf0f1;
-    }
-
-    .container {
-      width: 80%;
-      margin: 0 auto;
-    }
-
-    h2 {
-      font-size: 2.2em;
-      margin-bottom: 20px;
-      color: #f39c12;
-      text-align: left;
-    }
-
-    /* About Me Section */
-    #about {
-      background-color: #333;
-      padding: 60px 0;
-      text-align: center;
-    }
-
-    #about p {
-      font-size: 1.2em;
-      line-height: 1.8;
-      margin: 20px auto;
-      max-width: 700px;
-      color: #bdc3c7;
-    }
-
-    /* Projects Section */
-    #projects {
-      background-color: #444;
-      padding: 60px 0;
-    }
-
-    .project-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 30px;
-      justify-items: center;
-    }
-
-    .project {
-      background-color: #555;
-      border-radius: 10px;
-      padding: 20px;
-      text-align: center;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .project:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-    }
-
-    .project h3 {
-      font-size: 1.5em;
-      margin: 10px 0;
-      color: #ecf0f1;
-    }
-
-    .project p {
-      font-size: 1em;
-      color: #bdc3c7;
-      margin-top: 10px;
-    }
-
-    .video-container {
-      position: relative;
-      padding-top: 56.25%;
-      margin-bottom: 20px;
-    }
-
-    .video-container video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    /* Skills Section */
-    #skills {
-      background-color: #333;
-      padding: 60px 0;
-    }
-
-    #skills ul {
-      list-style: none;
-      padding: 0;
-      font-size: 1.2em;
-      line-height: 2;
-      color: #bdc3c7;
-    }
-
-    /* Contact Section */
-    #contact {
-      background-color: #222;
-      padding: 60px 0;
-    }
-
-    #contact a {
-      color: #f39c12;
-      text-decoration: none;
-    }
-
-    #contact a:hover {
-      text-decoration: underline;
-    }
-
-    /* Footer */
-    footer {
-      background-color: #111;
-      text-align: center;
-      padding: 20px 0;
-      font-size: 0.9em;
-      color: #777;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
@@ -214,9 +25,7 @@
     <div class="container content-center">
       <h2>About Me</h2>
       <p>
-        I'm Akash, an MSc Game Technology student with a passion for game development and design. I specialize in using tools like Unreal Engine and Unity, along with programming languages like C++ and C#, to create engaging and immersive games.
-
-        I enjoy combining creativity with technical skills to develop fun, interactive experiences. I’m always excited to take on new challenges and work with teams to turn game ideas into reality. My goal is to create high-quality games that captivate and inspire players.
+        I'm Akash, an MSc Game Technology student passionate about game development and design. I use Unreal Engine, Unity, C++, and C# to create immersive experiences. I thrive on technical challenges and love turning creative ideas into playable games.
       </p>
     </div>
   </section>
@@ -225,7 +34,6 @@
     <div class="container content-center">
       <h2>Projects</h2>
       <div class="project-grid">
-        <!-- Repeat this block for each project -->
         <div class="project">
           <div class="video-container">
             <video controls>
@@ -233,34 +41,31 @@
               Your browser does not support the video tag.
             </video>
           </div>
-          <h3>Directional Gravity Mechanics Prototype (Unreal)</h3>
-          <p>A game featuring innovative gravity manipulation mechanics, allowing players to walk on walls and ceilings. Developed in Unreal Engine to provide seamless transitions between gravitational planes.</p>
+          <h3>Directional Gravity Mechanics Prototype</h3>
+          <p>Gravity-shifting movement system made in Unreal Engine, allowing wall and ceiling traversal.</p>
         </div>
-        <!-- Add more project divs here as needed -->
+        <!-- Add more projects as needed -->
       </div>
     </div>
   </section>
 
   <section id="skills" class="section">
-    <div class="container content-Right">
+    <div class="container content-right">
       <h2>Skills</h2>
       <ul>
         <li>Unreal Engine</li>
         <li>Unity</li>
-        <li>C++</li>
-        <li>C#</li>
+        <li>C++ / C#</li>
         <li>Blueprints</li>
         <li>Game Design</li>
-        <li>Adobe Photoshop</li>
-        <li>Adobe After Effects</li>
-        <li>Adobe Premiere Pro</li>
+        <li>Photoshop / After Effects</li>
         <li>DaVinci Resolve</li>
       </ul>
     </div>
   </section>
 
   <section id="contact" class="section">
-    <div class="container content-Right">
+    <div class="container content-right">
       <h2>Contact Me</h2>
       <p>Email: akashvikas08@example.com</p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/akashvikas07/" target="_blank">linkedin.com/in/akashvikas07</a></p>
