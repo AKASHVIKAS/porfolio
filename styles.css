@@ -68,16 +68,12 @@ nav ul li a:hover {
 
 /* General Styles */
 body {
-  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: #4b4b4b;
   color: #ecf0f1;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 .container {
@@ -88,7 +84,7 @@ html {
 h2 {
   font-size: 2.2em;
   margin-bottom: 20px;
-  color: #d35400;
+  color: #d35400; /* NEW color matching gray theme */
   text-align: left;
 }
 
@@ -112,7 +108,6 @@ h2 {
   margin: 20px auto;
   max-width: 700px;
   color: #bdc3c7;
-  text-align: justify;
 }
 
 /* Portfolio Section */
@@ -154,7 +149,6 @@ h2 {
   font-size: 1em;
   color: #bdc3c7;
   margin-top: 10px;
-  text-align: justify;
 }
 
 .video-container {
@@ -212,22 +206,15 @@ h2 {
   text-align: center;
 }
 
-#contact p {
-  text-align: justify;
-}
-
 #contact a {
+  color: white;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
-#contact a[href*="linkedin.com"] {
-  color: black;
-}
-
-#contact a[href*="linkedin.com"]:hover {
-  color: #444;
+#contact a:hover {
+  color: #cccccc;
 }
 
 /* Responsive Design */
@@ -245,3 +232,4 @@ h2 {
     align-items: center;
   }
 }
+
