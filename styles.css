@@ -180,7 +180,7 @@ h2 {
 }
 
 #skills ul li {
-  background-color: #1abc9c;
+  background-color: #1f1f2e;
   color: #333;
   font-size: 1em;
   padding: 10px 20px;
@@ -189,7 +189,7 @@ h2 {
 }
 
 #skills ul li:hover {
-  background-color: #16a085;
+  background-color: #1f1f2e;
 }
 
 /* Section Titles */
